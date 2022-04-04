@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+:root {
+  --var--Blue: hsl(246, 80%, 60%);
+  --work--Light-red: hsl(15, 100%, 70%);
+  --play--Soft-blue: hsl(195, 74%, 62%);
+  --study--Light-red: hsl(348, 100%, 68%);
+  --exercise--Lime-green: hsl(145, 58%, 55%);
+  --social--Violet: hsl(264, 64%, 52%);
+  --selfcare--Soft-orange: hsl(43, 84%, 65%);
+  --var--Very-dark-blue: hsl(226, 43%, 10%);
+  --var--Dark-blue: hsl(235, 46%, 20%);
+  --var--Desaturated-blue: hsl(235, 45%, 61%);
+  --var--Pale-Blue: hsl(236, 100%, 87%);
+}
+
+@media (min-width: 375px) {
+  body {
+    font-family: 'Rubik', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--var--Very-dark-blue);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Container .BoxDate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Container .BoxDate .BoxJeremy {
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.7rem;
+    border-radius: 10px;
+    background-color: var(--var--Blue);
+  }
+  .Container .BoxDate .BoxJeremy .Data {
+    color: white;
+    margin: 1rem;
+  }
+  .Container .BoxDate .BoxJeremy .Data h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+  .Container .BoxDate .BoxJeremy .Jeremy {
+    width: 4rem;
+    height: 4rem;
+    border: 4px solid white;
+    border-radius: 40px;
+  }
+  .Container .BoxDate .Buttons {
+    background-color: var(--var--Dark-blue);
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    padding: 0.9rem;
+    height: 50px;
+    width: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .Container .BoxDate .Buttons button {
+    background-color: transparent;
+    color: var(--var--Pale-Blue);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .Container .BoxDate .Buttons button:hover {
+    color: white;
+  }
+  .Container .ContainerWork .ContImg,
+  .Container .ContainerStudy .ContImg,
+  .Container .ContainerExercise .ContImg,
+  .Container .ContainerPlay .ContImg,
+  .Container .ContainerSocial .ContImg,
+  .Container .ContainerSelfCare .ContImg {
+    background-color: var(--work--Light-red);
+    width: 300px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    z-index: -1;
+  }
+  .Container .ContainerWork .ContImg .icon,
+  .Container .ContainerStudy .ContImg .icon,
+  .Container .ContainerExercise .ContImg .icon,
+  .Container .ContainerPlay .ContImg .icon,
+  .Container .ContainerSocial .ContImg .icon,
+  .Container .ContainerSelfCare .ContImg .icon {
+    position: relative;
+    left: 75%;
+  }
+  .Container .ContainerWork .ContImg-play,
+  .Container .ContainerStudy .ContImg-play,
+  .Container .ContainerExercise .ContImg-play,
+  .Container .ContainerPlay .ContImg-play,
+  .Container .ContainerSocial .ContImg-play,
+  .Container .ContainerSelfCare .ContImg-play {
+    background-color: var(--play--Soft-blue);
+    width: 300px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    z-index: -1;
+  }
+  .Container .ContainerWork .ContImg-play .icon2,
+  .Container .ContainerStudy .ContImg-play .icon2,
+  .Container .ContainerExercise .ContImg-play .icon2,
+  .Container .ContainerPlay .ContImg-play .icon2,
+  .Container .ContainerSocial .ContImg-play .icon2,
+  .Container .ContainerSelfCare .ContImg-play .icon2 {
+    position: relative;
+    left: 75%;
+  }
+  .Container .ContainerWork .ContImg-study,
+  .Container .ContainerStudy .ContImg-study,
+  .Container .ContainerExercise .ContImg-study,
+  .Container .ContainerPlay .ContImg-study,
+  .Container .ContainerSocial .ContImg-study,
+  .Container .ContainerSelfCare .ContImg-study {
+    background-color: var(--study--Light-red);
+    width: 300px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    z-index: -1;
+  }
+  .Container .ContainerWork .ContImg-study .icon3,
+  .Container .ContainerStudy .ContImg-study .icon3,
+  .Container .ContainerExercise .ContImg-study .icon3,
+  .Container .ContainerPlay .ContImg-study .icon3,
+  .Container .ContainerSocial .ContImg-study .icon3,
+  .Container .ContainerSelfCare .ContImg-study .icon3 {
+    position: relative;
+    left: 75%;
+  }
+  .Container .ContainerWork .ContImg-exercise,
+  .Container .ContainerStudy .ContImg-exercise,
+  .Container .ContainerExercise .ContImg-exercise,
+  .Container .ContainerPlay .ContImg-exercise,
+  .Container .ContainerSocial .ContImg-exercise,
+  .Container .ContainerSelfCare .ContImg-exercise {
+    background-color: var(--exercise--Lime-green);
+    width: 300px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    z-index: -1;
+  }
+  .Container .ContainerWork .ContImg-exercise .icon4,
+  .Container .ContainerStudy .ContImg-exercise .icon4,
+  .Container .ContainerExercise .ContImg-exercise .icon4,
+  .Container .ContainerPlay .ContImg-exercise .icon4,
+  .Container .ContainerSocial .ContImg-exercise .icon4,
+  .Container .ContainerSelfCare .ContImg-exercise .icon4 {
+    position: relative;
+    left: 75%;
+  }
+  .Container .ContainerWork .ContImg-social,
+  .Container .ContainerStudy .ContImg-social,
+  .Container .ContainerExercise .ContImg-social,
+  .Container .ContainerPlay .ContImg-social,
+  .Container .ContainerSocial .ContImg-social,
+  .Container .ContainerSelfCare .ContImg-social {
+    background-color: var(--social--Violet);
+    width: 300px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    z-index: -1;
+  }
+  .Container .ContainerWork .ContImg-social .icon5,
+  .Container .ContainerStudy .ContImg-social .icon5,
+  .Container .ContainerExercise .ContImg-social .icon5,
+  .Container .ContainerPlay .ContImg-social .icon5,
+  .Container .ContainerSocial .ContImg-social .icon5,
+  .Container .ContainerSelfCare .ContImg-social .icon5 {
+    position: relative;
+    left: 75%;
+  }
+  .Container .ContainerWork .ContImg-SelfCare,
+  .Container .ContainerStudy .ContImg-SelfCare,
+  .Container .ContainerExercise .ContImg-SelfCare,
+  .Container .ContainerPlay .ContImg-SelfCare,
+  .Container .ContainerSocial .ContImg-SelfCare,
+  .Container .ContainerSelfCare .ContImg-SelfCare {
+    background-color: var(--selfcare--Soft-orange);
+    width: 300px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    z-index: -1;
+  }
+  .Container .ContainerWork .ContImg-SelfCare .icon6,
+  .Container .ContainerStudy .ContImg-SelfCare .icon6,
+  .Container .ContainerExercise .ContImg-SelfCare .icon6,
+  .Container .ContainerPlay .ContImg-SelfCare .icon6,
+  .Container .ContainerSocial .ContImg-SelfCare .icon6,
+  .Container .ContainerSelfCare .ContImg-SelfCare .icon6 {
+    position: relative;
+    left: 75%;
+  }
+  .Container .ContainerWork .ContData,
+  .Container .ContainerStudy .ContData,
+  .Container .ContainerExercise .ContData,
+  .Container .ContainerPlay .ContData,
+  .Container .ContainerSocial .ContData,
+  .Container .ContainerSelfCare .ContData {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 25px;
+    width: 300px;
+    height: 105px;
+    padding: 1rem;
+    background-color: var(--var--Dark-blue);
+  }
+  .Container .ContainerWork .ContData:hover,
+  .Container .ContainerStudy .ContData:hover,
+  .Container .ContainerExercise .ContData:hover,
+  .Container .ContainerPlay .ContData:hover,
+  .Container .ContainerSocial .ContData:hover,
+  .Container .ContainerSelfCare .ContData:hover {
+    background-color: var(--var--Desaturated-blue);
+    cursor: pointer;
+  }
+  .Container .ContainerWork .ContData .ContText,
+  .Container .ContainerStudy .ContData .ContText,
+  .Container .ContainerExercise .ContData .ContText,
+  .Container .ContainerPlay .ContData .ContText,
+  .Container .ContainerSocial .ContData .ContText,
+  .Container .ContainerSelfCare .ContData .ContText {
+    padding: 0.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Container .ContainerWork .ContData .ContText h2,
+  .Container .ContainerStudy .ContData .ContText h2,
+  .Container .ContainerExercise .ContData .ContText h2,
+  .Container .ContainerPlay .ContData .ContText h2,
+  .Container .ContainerSocial .ContData .ContText h2,
+  .Container .ContainerSelfCare .ContData .ContText h2 {
+    color: white;
+    font-weight: 500;
+  }
+  .Container .ContainerWork .ContData .ContLast,
+  .Container .ContainerStudy .ContData .ContLast,
+  .Container .ContainerExercise .ContData .ContLast,
+  .Container .ContainerPlay .ContData .ContLast,
+  .Container .ContainerSocial .ContData .ContLast,
+  .Container .ContainerSelfCare .ContData .ContLast {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Container .ContainerWork .ContData .ContLast span,
+  .Container .ContainerStudy .ContData .ContLast span,
+  .Container .ContainerExercise .ContData .ContLast span,
+  .Container .ContainerPlay .ContData .ContLast span,
+  .Container .ContainerSocial .ContData .ContLast span,
+  .Container .ContainerSelfCare .ContData .ContLast span {
+    font-size: 28px;
+    color: white;
+    font-weight: 300;
+  }
+  .Container .ContainerWork .ContData .ContLast small,
+  .Container .ContainerStudy .ContData .ContLast small,
+  .Container .ContainerExercise .ContData .ContLast small,
+  .Container .ContainerPlay .ContData .ContLast small,
+  .Container .ContainerSocial .ContData .ContLast small,
+  .Container .ContainerSelfCare .ContData .ContLast small {
+    color: white;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body {
+    height: 100vh;
+  }
+  .Container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  .Container .BoxDate {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  .Container .BoxDate .BoxJeremy {
+    height: 310px;
+    width: 275px;
+    font-size: 28px;
+    margin: 2rem 0rem 0rem 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Container .BoxDate .Buttons {
+    height: 150px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0.4rem;
+  }
+  .Container .BoxDate .Buttons button {
+    font-size: 24px;
+    margin: 0.4rem 0rem;
+  }
+  .Container .ContainerSelfCare {
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+  }
+  .Container .ContainerSocial {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+  }
+  .Container .ContainerExercise {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  .Container .ContainerWork,
+  .Container .ContainerStudy,
+  .Container .ContainerExercise,
+  .Container .ContainerPlay,
+  .Container .ContainerSocial,
+  .Container .ContainerSelfCare {
+    margin: 0.5rem;
+  }
+  .Container .ContainerWork .ContImg, .Container .ContainerWork .ContImg-play, .Container .ContainerWork .ContImg-study, .Container .ContainerWork .ContImg-exercise, .Container .ContainerWork .ContImg-social, .Container .ContainerWork .ContImg-SelfCare,
+  .Container .ContainerStudy .ContImg,
+  .Container .ContainerStudy .ContImg-play,
+  .Container .ContainerStudy .ContImg-study,
+  .Container .ContainerStudy .ContImg-exercise,
+  .Container .ContainerStudy .ContImg-social,
+  .Container .ContainerStudy .ContImg-SelfCare,
+  .Container .ContainerExercise .ContImg,
+  .Container .ContainerExercise .ContImg-play,
+  .Container .ContainerExercise .ContImg-study,
+  .Container .ContainerExercise .ContImg-exercise,
+  .Container .ContainerExercise .ContImg-social,
+  .Container .ContainerExercise .ContImg-SelfCare,
+  .Container .ContainerPlay .ContImg,
+  .Container .ContainerPlay .ContImg-play,
+  .Container .ContainerPlay .ContImg-study,
+  .Container .ContainerPlay .ContImg-exercise,
+  .Container .ContainerPlay .ContImg-social,
+  .Container .ContainerPlay .ContImg-SelfCare,
+  .Container .ContainerSocial .ContImg,
+  .Container .ContainerSocial .ContImg-play,
+  .Container .ContainerSocial .ContImg-study,
+  .Container .ContainerSocial .ContImg-exercise,
+  .Container .ContainerSocial .ContImg-social,
+  .Container .ContainerSocial .ContImg-SelfCare,
+  .Container .ContainerSelfCare .ContImg,
+  .Container .ContainerSelfCare .ContImg-play,
+  .Container .ContainerSelfCare .ContImg-study,
+  .Container .ContainerSelfCare .ContImg-exercise,
+  .Container .ContainerSelfCare .ContImg-social,
+  .Container .ContainerSelfCare .ContImg-SelfCare {
+    width: 250px;
+  }
+  .Container .ContainerWork .ContData,
+  .Container .ContainerStudy .ContData,
+  .Container .ContainerExercise .ContData,
+  .Container .ContainerPlay .ContData,
+  .Container .ContainerSocial .ContData,
+  .Container .ContainerSelfCare .ContData {
+    width: 250px;
+    height: 150px;
+  }
+  .Container .ContainerWork .ContData .ContLast,
+  .Container .ContainerStudy .ContData .ContLast,
+  .Container .ContainerExercise .ContData .ContLast,
+  .Container .ContainerPlay .ContData .ContLast,
+  .Container .ContainerSocial .ContData .ContLast,
+  .Container .ContainerSelfCare .ContData .ContLast {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .Container .ContainerWork .ContData .ContLast span,
+  .Container .ContainerStudy .ContData .ContLast span,
+  .Container .ContainerExercise .ContData .ContLast span,
+  .Container .ContainerPlay .ContData .ContLast span,
+  .Container .ContainerSocial .ContData .ContLast span,
+  .Container .ContainerSelfCare .ContData .ContLast span {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    margin: auto;
+  }
+  .Container .BoxDate {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    margin: 1rem;
+  }
+  .Container .BoxDate .BoxJeremy {
+    height: 310px;
+    width: 275px;
+    font-size: 28px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Container .BoxDate .Buttons {
+    height: 120px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0.4rem;
+  }
+  .Container .BoxDate .Buttons button {
+    font-size: 24px;
+    margin: 0.4rem 0rem;
+  }
+  .Container .ContainerSelfCare {
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+  }
+  .Container .ContainerSocial {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+  }
+  .Container .ContainerExercise {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+  .Container .ContainerWork,
+  .Container .ContainerStudy,
+  .Container .ContainerExercise,
+  .Container .ContainerPlay,
+  .Container .ContainerSocial,
+  .Container .ContainerSelfCare {
+    margin: 0.4rem 0.4rem;
+  }
+  .Container .ContainerWork .ContData,
+  .Container .ContainerStudy .ContData,
+  .Container .ContainerExercise .ContData,
+  .Container .ContainerPlay .ContData,
+  .Container .ContainerSocial .ContData,
+  .Container .ContainerSelfCare .ContData {
+    height: 150px;
+  }
+  .Container .ContainerWork .ContData .ContLast,
+  .Container .ContainerStudy .ContData .ContLast,
+  .Container .ContainerExercise .ContData .ContLast,
+  .Container .ContainerPlay .ContData .ContLast,
+  .Container .ContainerSocial .ContData .ContLast,
+  .Container .ContainerSelfCare .ContData .ContLast {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .Container .ContainerWork .ContData .ContLast span,
+  .Container .ContainerStudy .ContData .ContLast span,
+  .Container .ContainerExercise .ContData .ContLast span,
+  .Container .ContainerPlay .ContData .ContLast span,
+  .Container .ContainerSocial .ContData .ContLast span,
+  .Container .ContainerSelfCare .ContData .ContLast span {
+    font-size: 48px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
