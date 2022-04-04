@@ -235,6 +235,70 @@
 }
 
 }
+@media(min-width: 1024px){
+    body{
+        height: 100vh;
+    }
+    .Container{
+        display:grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto ;
+        .BoxDate{
+           grid-column: 1/2;
+           grid-row: 1/3;
+           .BoxJeremy{
+               height: 310px;
+               width: 275px;
+               font-size: 28px;
+               margin: 2rem 0rem 0rem 0rem;
+                flex-direction: column;
+            }
+            .Buttons{
+                height: 150px;
+                flex-direction: column;
+                align-items:baseline;
+                margin: 0.4rem;
+            
+                button{
+                    font-size: 24px;
+                    margin: 0.4rem 0rem;
+                    // padding: 0.2çrem;
+                }
+            }
+        }
+        .ContainerSelfCare{
+            grid-column-start: 4;
+        }
+        .ContainerSocial{
+            grid-column-start: 3;
+        }
+        .ContainerExercise{
+            grid-column-start: 2;
+        }
+    .ContainerWork, 
+    .ContainerStudy,
+    .ContainerExercise,
+    .ContainerPlay,
+    .ContainerSocial,
+    .ContainerSelfCare{
+        margin: 0.5rem;
+        .ContImg,.ContImg-play,.ContImg-study,.ContImg-exercise,.ContImg-social,.ContImg-SelfCare{
+            width: 250px;
+        }
+        .ContData{
+            width: 250px;
+            height: 150px;
+            .ContLast{
+                flex-direction: column;
+                align-items: baseline;
+                span{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    }  
+}
 @media(min-width: 1326px){
     body{
         height: 100vh;
